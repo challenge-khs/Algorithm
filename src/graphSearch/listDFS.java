@@ -13,14 +13,14 @@ public class listDFS {
     public static ArrayList<Integer>[] adj;
     public static StringBuilder sb;
 
-    public static void dfs(int start) {
+    public static void listDfs(int start) {
         visited[start] = true;
         sb.append(start+ " ");
         int len = adj[start].size();
         for (int i = 0; i < len; i++) {
             int next = adj[start].get(i);
             if (!visited[next]) {
-                dfs(next);
+                listDfs(next);
             }
         }
     }
@@ -51,7 +51,7 @@ public class listDFS {
             adj[e].add(s);
         }
 
-        dfs(v);
+        listDfs(v);
         System.out.println(sb);
     }
 }

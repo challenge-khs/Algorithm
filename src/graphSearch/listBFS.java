@@ -14,7 +14,7 @@ public class listBFS {
     public static ArrayList<Integer>[] adj;
     public static StringBuilder sb;
 
-    public static void bfs(int start) {
+    public static void listBfs(int start) {
         Queue<Integer> q = new LinkedList<>();
         visited[start] = true;
         q.offer(start);
@@ -58,7 +58,7 @@ public class listBFS {
             adj[e].add(s);
         }
 
-        bfs(v);
+        listBfs(v);
         System.out.println(sb);
     }
 }
