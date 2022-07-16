@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+// 음수 가중치가 있는 그래프에서 특정 시작점에서 다른 나머지 정점까지의 최단거리를 구함
 //11657
 class City {
     int end;

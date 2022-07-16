@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
+// 음수 가중치가 없는 그래프에서 특정한 하나의 정점에서 다른 모든 정점으로 가는 최단 경로를 구함
 //1753
 class Node implements Comparable<Node> {
     int to, weight;

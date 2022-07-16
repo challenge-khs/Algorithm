@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// 음의 사이클이 없는 그래프에 대해서 모든 정점 사이의 최단거리를 구함 (시간 복잡도: O(V^3))
 public class FloydWarshall {
     static int INF = 987654321;
 
